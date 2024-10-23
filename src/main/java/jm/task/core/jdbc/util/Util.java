@@ -21,9 +21,9 @@ public class Util {
         try {
             Properties props = getProps();
             connection = DriverManager.getConnection(
-                    props.getProperty("db.url"),
-                    props.getProperty("db.username"),
-                    props.getProperty("db.password")
+                    props.getProperty("db.url"),      // Use correct key
+                    props.getProperty("db.username"), // Use correct key
+                    props.getProperty("db.password")  // Use correct key
             );
         } catch (SQLException | IOException e) {
             logger.log(Level.SEVERE, "Database connection error", e);

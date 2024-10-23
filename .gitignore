@@ -6,6 +6,7 @@
 
 ### Maven target folders
 target/
+resources/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### Eclipse ###
